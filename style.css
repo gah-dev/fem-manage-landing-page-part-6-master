@@ -181,12 +181,15 @@ body {
 
 .primary-header {
   padding-top: var(--size-700);
+  border: solid 4px #555;
 }
 
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: solid 4px #26021b;
+
 }
 
 .mobile-nav-toggle {
@@ -226,6 +229,7 @@ body {
   .primary-header[data-overlay] {
     position: relative;
     z-index: 999;
+
   }
 
   .primary-header[data-overlay]::before {
@@ -233,6 +237,7 @@ body {
     position: fixed;
     inset: 0;
     background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8));
+
   }
 
   .nav-list {
@@ -607,6 +612,8 @@ input:where([type="text"], [type="email"]) {
 @media (max-width: 47em) {
   .hero__image {
     order: -1;
+    border: solid 5px #e2d11d;
+
   }
 }
 
@@ -692,11 +699,15 @@ input:where([type="text"], [type="email"]) {
 
 .flow > * + * {
   margin-top: var(--flow-spacer, 3em);
+  border: solid 4px #09d695;
+
 }
 
 .even-columns {
   display: grid;
   gap: 1rem;
+  border: solid 2px #c79191;
+
 }
 
 @media (min-width: 47em) {
@@ -821,6 +832,8 @@ input:where([type="text"], [type="email"]) {
 .main-container {
   --main-container-max-width: 1110px;
   --main-container-relative-width: 90%;
+  border: solid 4px #d60998;
+
 
   width: min(var(--main-container-max-width), var(--main-container-relative-width));
   margin-inline: auto;
